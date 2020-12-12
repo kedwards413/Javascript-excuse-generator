@@ -19,6 +19,7 @@ function excuseGenerator(arr) {
   let random = Math.floor(Math.random() * arr.length);
   return arr[random];
 }
+
 var kaela =
   excuseGenerator(who) +
   " " +
@@ -32,4 +33,4 @@ window.onload = function() {
   console.log(kaela);
 };
 
-document.write(kaela);
+document.getElementById("excuse").innerHTML = kaela;
